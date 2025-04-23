@@ -7,7 +7,7 @@
   
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9fafb;
+    background-color: #0080ff;
     color: #1f2937;
   }
   
@@ -175,9 +175,9 @@
   
   
   /* Ajuste no menu de navegação */
-  .navbar {
-    background-color: #2563eb; /* Cor de fundo azul */
-  }
+  /*.navbar {
+    background-color: #2563eb; /* Cor de fundo azul
+  }/*
   
   /* Alteração da cor dos links no menu */
   .navbar-nav .nav-link {
@@ -227,5 +227,33 @@
   .text-primary:hover {
     color: #1d4ed8;
   }
+  
+
+  
+  .navbar-gradient .nav-link {
+    color: white !important;
+  }
+  
+  .navbar-gradient .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar-brand {
+    color: white !important;
+  }
+  .navbar-gradient {
+    background: linear-gradient(135deg, #6f42c1, #00bcd4);
+  }
+  
+  
+  .navbar-gradient .nav-link,
+  .navbar-gradient .navbar-brand {
+    color: white !important;
+  }
+  
+  .navbar-gradient .nav-link:hover {
+    text-decoration: underline;
+  }
+    
   
   
