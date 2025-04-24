@@ -1,259 +1,248 @@
-/* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0080ff;
-    color: #1f2937;
-  }
-  
-  /* Header fixo */
-  header {
-    width: 100%;
-    background-color: #2563eb; /* azul educação */
-    color: white;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Container centralizado */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0080ff;
+  color: #1f2937;
+}
+
+/* Header fixo */
+header {
+  width: 100%;
+  background-color: #2563eb;
+  /* azul educação */
+  color: white;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Container centralizado */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #22c55e;
+  /* verde esperança */
+  text-decoration: none;
+}
+
+/* Menu de navegação */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #93c5fd;
+}
+
+/* Botões de login e cadastro */
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.auth-buttons a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Botão login */
+.auth-buttons .login-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.auth-buttons .login-btn:hover {
+  background-color: white;
+  color: #2563eb;
+}
+
+/* Botão cadastro */
+.auth-buttons .signup-btn {
+  background-color: #22c55e;
+  color: white;
+  border: none;
+}
+
+.auth-buttons .signup-btn:hover {
+  background-color: #16a34a;
+}
+
+/* Menu responsivo (hamburguer) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
   .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Logo */
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #22c55e; /* verde esperança */
-    text-decoration: none;
-  }
-  
-  /* Menu de navegação */
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: rgb(255, 0, 0);
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #93c5fd; /* azul claro */
-  }
-  
-  /* Botões de login e cadastro */
-  .auth-buttons {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .auth-buttons a {
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-  
-  /* Botão login */
-  .auth-buttons .login-btn {
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-  }
-  
-  .auth-buttons .login-btn:hover {
-    background-color: white;
-    color: #2563eb;
-  }
-  
-  /* Botão cadastro */
-  .auth-buttons .signup-btn {
-    background-color: #22c55e;
-    color: white;
-    border: none;
-  }
-  
-  .auth-buttons .signup-btn:hover {
-    background-color: #16a34a;
-  }
-  
-  /* Menu responsivo (hamburguer) */
-  .menu-toggle {
-    display: none;
     flex-direction: column;
-    gap: 4px;
-    cursor: pointer;
+    align-items: flex-start;
   }
-  
-  .menu-toggle span {
-    height: 3px;
-    width: 25px;
-    background-color: white;
-    border-radius: 2px;
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    display: none;
   }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .nav-container {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    nav ul {
-      flex-direction: column;
-      width: 100%;
-      margin-top: 1rem;
-      display: none;
-    }
-  
-    nav ul.active {
-      display: flex;
-    }
-  
-    .auth-buttons {
-      margin-top: 1rem;
-      width: 100%;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-  
-    .menu-toggle {
-      display: flex;
-      position: absolute;
-      top: 1.5rem;
-      right: 2rem;
-    }
+
+  nav ul.active {
+    display: flex;
   }
-  /* Estilo para a seção Hero */
+
+  .auth-buttons {
+    margin-top: 1rem;
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+  }
+}
+
 /* Estilo para a seção Hero */
 .hero {
-    position: relative;
-    height: 80vh;
-    background-image: url('img/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
-  
-  .hero .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(37, 99, 235, 0.45); /* azul com 45% de transparência */
-    z-index: 1;
-  }
-  
-  .hero .container {
-    position: relative;
-    z-index: 2; /* fica acima da overlay */
-  }
-  
-  
-  
-  
-  /* Ajuste no menu de navegação */
-  /*.navbar {
-    background-color: #2563eb; /* Cor de fundo azul
-  }/*
-  
-  /* Alteração da cor dos links no menu */
-  .navbar-nav .nav-link {
-    color: white; /* Cor dos links */
-    font-weight: 500;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: #93c5fd; /* Azul claro quando passar o mouse */
-  }
-  /* Estilo para a seção de login */
-.login-section {
-    background-color: #f9fafb;
-  }
-  
-  /* Estilo do card de login */
-  .card {
-    border-radius: 10px;
-    border: none;
-  }
-  
-  /* Estilo dos campos de entrada */
-  .form-control {
-    border-radius: 5px;
-    padding: 1rem;
-    border: 1px solid #d1d5db;
-  }
-  
-  /* Estilo do botão de login */
-  .btn-primary {
-    background-color: #2563eb;
-    border-color: #2563eb;
-    padding: 1rem;
-    font-size: 1rem;
-  }
-  
-  .btn-primary:hover {
-    background-color: #1d4ed8;
-    border-color: #1d4ed8;
-  }
-  
-  /* Estilo do texto de link para cadastro */
-  .text-primary {
-    color: #2563eb;
-  }
-  
-  .text-primary:hover {
-    color: #1d4ed8;
-  }
-  
+  position: relative;
+  height: 80vh;
+  background-image: url('img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
 
-  
-  .navbar-gradient .nav-link {
-    color: white !important;
-  }
-  
-  .navbar-gradient .nav-link:hover {
-    text-decoration: underline;
-  }
-  
-  .navbar-brand {
-    color: white !important;
-  }
-  .navbar-gradient {
-    background: linear-gradient(135deg, #6f42c1, #00bcd4);
-  }
-  
-  
-  .navbar-gradient .nav-link,
-  .navbar-gradient .navbar-brand {
-    color: white !important;
-  }
-  
-  .navbar-gradient .nav-link:hover {
-    text-decoration: underline;
-  }
-    
-  
-  
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 99, 235, 0.45);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Alteração da cor dos links no menu */
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #93c5fd;
+}
+
+/* Estilo para a seção de login */
+.login-section {
+  background-color: #f9fafb;
+}
+
+/* Estilo do card de login */
+.card {
+  border-radius: 10px;
+  border: none;
+}
+
+/* Estilo dos campos de entrada */
+.form-control {
+  border-radius: 5px;
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+}
+
+/* Estilo do botão de login */
+.btn-primary {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+/* Estilo do texto de link para cadastro */
+.text-primary {
+  color: #2563eb;
+}
+
+.text-primary:hover {
+  color: #1d4ed8;
+}
+
+.navbar-gradient .nav-link {
+  color: white !important;
+}
+
+.navbar-gradient .nav-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.navbar-gradient {
+  background: linear-gradient(135deg, #6f42c1, #00bcd4);
+}
+
+.navbar-gradient .nav-link,
+.navbar-gradient .navbar-brand {
+  color: white !important;
+}
+
+.navbar-gradient .nav-link:hover {
+  text-decoration: underline;
+}
