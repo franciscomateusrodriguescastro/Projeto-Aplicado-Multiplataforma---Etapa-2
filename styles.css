@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0080ff;
+  background-color: #ffffff;
   color: #1f2937;
 }
 
@@ -235,12 +235,12 @@ nav ul li a:hover {
 }
 
 .navbar-gradient {
-  background: linear-gradient(135deg, #6f42c1, #00bcd4);
+  background: linear-gradient(135deg, #ffffff, #ffffff);
 }
 
 .navbar-gradient .nav-link,
 .navbar-gradient .navbar-brand {
-  color: white !important;
+  color: rgb(17, 72, 255) !important;
 }
 
 .navbar-gradient .nav-link:hover {

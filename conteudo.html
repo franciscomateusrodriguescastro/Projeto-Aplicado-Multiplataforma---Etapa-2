@@ -44,7 +44,8 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero d-flex align-items-center justify-content-center text-white" style="height: 80vh; background-image: url('img/hero-bg.jpg'); background-size: cover; background-position: center;">
+  <section class="hero d-flex align-items-center justify-content-center text-white"
+    style="height: 80vh; background-image: url('img/hero'); background-size: cover; background-position: center;">
     <div class="container text-center">
       <h1 class="display-4 fw-bold">Educação Interativa e Acessível</h1>
       <p class="lead">Plataforma para alunos, professores e responsáveis</p>
@@ -94,74 +95,53 @@
     </div>
   </section>
 
-  <!-- Recursos -->
-  <section id="recursos" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">
-        <i class="bi bi-gear-fill text-primary me-2"></i>Funcionalidades
-      </h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <i class="bi bi-file-earmark-text display-4 text-primary mb-3"></i>
-              <h5 class="card-title">Conteúdo Didático</h5>
-              <p class="card-text">Acesso a aulas, vídeos, quizzes e muito mais.</p>
-            </div>
+<!-- Seção Conteúdo Didático -->
+<section id="conteudo-didatico" class="py-5" style="background-color: #f8f9fa;">
+  <div class="container">
+    <h2 class="text-center mb-4">
+      <i class="bi bi-mortarboard-fill text-primary me-2"></i> Conteúdo Didático
+    </h2>
+    <p class="text-center lead mb-5">Explore materiais educativos interativos para alunos e professores.</p>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <i class="bi bi-camera-video-fill display-4 text-primary mb-3"></i>
+            <h5 class="card-title">Aulas em Vídeo</h5>
+            <p class="card-text">Aulas gravadas e ao vivo com explicações claras e recursos visuais atrativos.</p>
+            <a href="https://classroom.google.com/" class="btn btn-outline-primary btn-sm">Ver aulas</a>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <i class="bi bi-person-lines-fill display-4 text-primary mb-3"></i>
-              <h5 class="card-title">Painel do Professor</h5>
-              <p class="card-text">Ferramentas para criar e gerenciar conteúdos.</p>
-            </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <i class="bi bi-question-circle-fill display-4 text-primary mb-3"></i>
+            <h5 class="card-title">Quizzes Interativos</h5>
+            <p class="card-text">Teste seus conhecimentos com quizzes dinâmicos e feedback instantâneo.</p>
+            <a href="https://kahoot.com/" class="btn btn-outline-primary btn-sm">Fazer quiz</a>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <i class="bi bi-bar-chart-line display-4 text-primary mb-3"></i>
-              <h5 class="card-title">Relatórios para Pais</h5>
-              <p class="card-text">Visualização do progresso dos alunos em tempo real.</p>
-            </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <i class="bi bi-journal-text display-4 text-primary mb-3"></i>
+            <h5 class="card-title">Material Complementar</h5>
+            <p class="card-text">PDFs, apostilas e atividades para reforçar o aprendizado em casa.</p>
+            <a href="material.html" class="btn btn-outline-primary btn-sm">Acessar materiais</a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Contato -->
-  <section id="contato" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-3">
-        <i class="bi bi-envelope-fill text-primary" style="font-size: 30px; margin-right: 10px;"></i>Contato
-      </h2>
-      <p class="text-center mb-4">Dúvidas? Fale com a nossa equipe!</p>
 
-      <div class="row justify-content-center">
-        <div class="col-lg-6 col-md-8">
-          <form action="/enviar-contato" method="POST">
-            <div class="mb-3">
-              <label for="nome" class="form-label">Seu Nome</label>
-              <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Seu E-mail</label>
-              <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
-            </div>
-            <div class="mb-3">
-              <label for="mensagem" class="form-label">Mensagem</label>
-              <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem"
-                required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
   <!-- Footer -->
   <footer class="text-white text-center py-3" style="background: linear-gradient(135deg, #6f42c1, #00bcd4);">
