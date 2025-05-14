@@ -323,3 +323,13 @@ nav ul li a:hover {
     transform: translateY(0);
   }
 }
+.custom-btn-classroom {
+    background: linear-gradient(135deg, #00bcd4, #1693a5);
+    color: white;
+    border: none;
+  }
+
+  .custom-btn-classroom:hover {
+    background: #7ececa;
+    color: white;
+  }
