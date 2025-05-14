@@ -263,3 +263,63 @@ nav ul li a:hover {
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
   }
+  .modulo-aprendizado {
+  color: white;
+  text-align: center;
+  padding: 3em 1em;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.modulo-titulo {
+  font-size: 2rem;
+  margin-bottom: 2em;
+}
+
+.modulo-pilares {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.modulo-pilar {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5em;
+  border-radius: 12px;
+  width: 280px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, background 0.3s ease;
+  backdrop-filter: blur(10px);
+  display: block;
+}
+
+.modulo-pilar:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.modulo-pilar i {
+  color: #ffffff;
+  margin-bottom: 0.5em;
+}
+
+.animar {
+  opacity: 0;
+  animation: aparecer 1s ease forwards;
+}
+
+.delay1 { animation-delay: 0.5s; }
+.delay2 { animation-delay: 1s; }
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
