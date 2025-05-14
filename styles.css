@@ -82,7 +82,7 @@ nav ul li a:hover {
 
 .auth-buttons .login-btn:hover {
   background-color: white;
-  color: #2563eb;
+  color: #1f92c0;
 }
 
 /* Botão cadastro */
@@ -203,14 +203,14 @@ nav ul li a:hover {
 /* Estilo do botão de login */
 .btn-primary {
   background-color: #1693a5;
-  border-color: #45b5c4;
+  border-color: #78e0ee;
   padding: 1rem;
   font-size: 1rem;
 }
 
 .btn-primary:hover {
-  background-color: #1d4ed8;
-  border-color: #1d4ed8;
+  background-color: #29a5b6;
+  border-color: #3bb1e7;
 }
 
 /* Estilo do texto de link para cadastro */
@@ -219,7 +219,7 @@ nav ul li a:hover {
 }
 
 .text-primary:hover {
-  color: #1d4ed8;
+  color: #18b0c4;
 }
 
 .navbar-gradient .nav-link {
