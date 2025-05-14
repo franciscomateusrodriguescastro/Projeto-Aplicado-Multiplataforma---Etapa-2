@@ -7,13 +7,13 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
-  color: #1f2937;
+  color: #1693a5;
 }
 
 /* Header fixo */
 header {
   width: 100%;
-  background-color: #2563eb;
+  background-color: #1693a5;
   /* azul educação */
   color: white;
   top: 0;
@@ -36,7 +36,7 @@ header {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #22c55e;
+  color: #1693a5;
   /* verde esperança */
   text-decoration: none;
 }
@@ -87,13 +87,13 @@ nav ul li a:hover {
 
 /* Botão cadastro */
 .auth-buttons .signup-btn {
-  background-color: #22c55e;
+  background-color: #1693a5;
   color: white;
   border: none;
 }
 
 .auth-buttons .signup-btn:hover {
-  background-color: #16a34a;
+  background-color: #809a9e;
 }
 
 /* Menu responsivo (hamburguer) */
@@ -163,7 +163,7 @@ nav ul li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(37, 99, 235, 0.45);
+  background-color: rgba(37, 235, 225, 0.45);
   z-index: 1;
 }
 
@@ -202,8 +202,8 @@ nav ul li a:hover {
 
 /* Estilo do botão de login */
 .btn-primary {
-  background-color: #2563eb;
-  border-color: #2563eb;
+  background-color: #1693a5;
+  border-color: #45b5c4;
   padding: 1rem;
   font-size: 1rem;
 }
@@ -215,7 +215,7 @@ nav ul li a:hover {
 
 /* Estilo do texto de link para cadastro */
 .text-primary {
-  color: #2563eb;
+  color: #1693a5;
 }
 
 .text-primary:hover {
