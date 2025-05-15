@@ -179,4 +179,13 @@
       grid-template-columns: 1fr;
     }
   }
+
+  .navbar-nav .nav-link {
+  color: white;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #93c5fd;
+}
   
