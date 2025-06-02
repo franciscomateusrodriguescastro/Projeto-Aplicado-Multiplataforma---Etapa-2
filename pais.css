@@ -13,6 +13,11 @@ section {
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
+#titulo1 {
+  color: #fdfdfd;
+  margin-bottom: 0.5rem;
+}
+
 h2 {
   color: #0088cc;
   margin-bottom: 0.5rem;
@@ -47,6 +52,12 @@ h2 {
   border-radius: 8px;
 }
 
-canvas {
+.grafico-container {
   max-width: 100%;
+  height: 250px; /* Achata o gráfico */
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
 }

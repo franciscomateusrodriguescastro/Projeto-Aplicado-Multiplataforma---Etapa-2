@@ -12,57 +12,93 @@ const turmas = {
         "História": [9.0, 9.5, 8.0],
         "Ciências": [7.0, 8.0, 5.5, 9.0]
       },
-      "Maria Oliveira": {
-        "Matemática": [5.0, 8.5, 6.5, 9.0],
-        "Português": [9.0, 9.5, 7.0, 7.5],
-        "História": [8.0, 7.5, 9.0, 7.0],
-        "Ciências": [10.0, 9.0, 8.5, 7.0]
+      "Carla Mendes": {
+  "Matemática": [8.0, 9.0, 9.5, 9.0],
+  "Português": [7.5, 8.0, 8.5, 9.0],
+  "História": [8.5, 9.0, 8.0, 9.5],
+  "Ciências": [9.0, 8.5, 9.5, 8.0]
       },
-      "Mariana Cardoso": {
-        "Matemática": [7.0, 8.5, 6.5, 9.0],
-        "Português": [6.0, 9.5, 8.0, 7.5],
-        "História": [8.0, 7.5, 9.0, 7.0],
-        "Ciências": [8.0, 9.0, 8.5, 7.0]
+      "Felipe Rocha": {
+        "Matemática": [6.0, 7.5, 6.5, 7.0],
+        "Português": [7.0, 6.5, 6.0, 7.5],
+        "História": [6.5, 7.0, 7.5, 6.0],
+        "Ciências": [7.0, 6.5, 6.0, 7.5]
       },
-      "Pedro Lucas": {
-        "Matemática": [4.0, 8.5, 6.5, 9.0],
-        "Português": [9.0, 9.5, 9.0, 7.5],
-        "História": [8.0, 6.5, 9.0, 7.0],
-        "Ciências": [10.0, 9.0, 8.5, 7.0]
+      "Ana Beatriz Souza": {
+        "Matemática": [10.0, 9.5, 9.0, 10.0],
+        "Português": [9.5, 10.0, 9.0, 9.5],
+        "História": [9.5, 9.0, 10.0, 10.0],
+        "Ciências": [10.0, 9.5, 9.5, 10.0]
+      },
+      "Rafael Lima": {
+        "Matemática": [5.0, 6.5, 5.5, 6.0],
+        "Português": [6.0, 5.5, 6.0, 6.5],
+        "História": [5.5, 6.0, 5.0, 6.5],
+        "Ciências": [6.0, 5.0, 6.5, 6.0]
+      },
+      "Isabela Ferreira": {
+        "Matemática": [7.0, 8.0, 8.5, 7.5],
+        "Português": [8.0, 7.5, 8.0, 8.5],
+        "História": [7.5, 8.5, 8.0, 7.0],
+        "Ciências": [8.5, 8.0, 7.5, 8.0]
+      },
+      "Thiago Ribeiro": {
+        "Matemática": [6.0, 7.0, 7.5, 6.5],
+        "Português": [7.0, 6.5, 7.5, 6.0],
+        "História": [6.5, 6.0, 7.0, 7.5],
+        "Ciências": [7.0, 6.5, 6.0, 7.5]
       }
     }
   },
   "2B": {
-    professores: ["Fernando", "Juliana"],
+    professores: ["Fernando", "Juliana", "Caio", "Ana Luiza"],
     atividades: {
       labels: ['Matemática', 'Português', 'História', 'Ciências'],
       dados: [15, 14, 16, 10]
     },
     alunos: {
-      "João Pereira": {
+        "João Pereira": {
+          "Matemática": [8.0, 7.0, 8.0, 9.0],
+          "Português": [8.5, 5.0, 7.5, 7.0],
+          "História": [6.5, 6.5, 8.0, 9.0],
+          "Ciências": [7.0, 7.5, 2.0, 9.0]
+            },
+            "João Pereira": {
         "Matemática": [8.0, 7.0, 8.0, 9.0],
         "Português": [8.5, 5.0, 7.5, 7.0],
         "História": [6.5, 6.5, 8.0, 9.0],
         "Ciências": [7.0, 7.5, 2.0, 9.0]
+          },
+          "Mariana Costa": {
+            "Matemática": [7.5, 8.0, 6.0, 7.5],
+            "Português": [8.0, 8.5, 9.0, 7.5],
+            "História": [7.0, 6.5, 7.5, 8.0],
+            "Ciências": [8.5, 9.0, 7.0, 8.0]
+          },
+          "Lucas Almeida": {
+            "Matemática": [6.0, 5.5, 7.0, 6.5],
+            "Português": [7.5, 6.0, 6.5, 7.0],
+            "História": [5.0, 6.0, 6.5, 7.0],
+            "Ciências": [6.5, 7.0, 6.5, 6.0]
+          },
+          "Vitória Nunes": {
+            "Matemática": [9.0, 8.5, 9.5, 9.0],
+            "Português": [9.5, 9.0, 8.5, 9.0],
+            "História": [8.5, 9.0, 9.0, 9.5],
+            "Ciências": [9.0, 8.5, 9.5, 8.5]
+          },
+          "Bruno Martins": {
+            "Matemática": [4.5, 6.0, 5.5, 6.5],
+            "Português": [6.0, 5.0, 6.5, 6.0],
+            "História": [5.5, 6.0, 4.0, 5.0],
+            "Ciências": [6.5, 5.0, 6.0, 5.5]
+          },
+          "Aline Xavier": {
+          "Matemática": [7.5, 8.0, 7.0, 8.5],
+          "Português": [8.0, 7.5, 7.0, 8.5],
+          "História": [7.0, 6.5, 8.0, 7.5],
+          "Ciências": [8.0, 8.5, 7.5, 8.0]
       },
-      "Pedro Arthur": {
-        "Matemática": [7.0, 7.5, 6.5, 9.0],
-        "Português": [9.0, 9.5, 8.0, 7.5],
-        "História": [8.0, 8.5, 9.0, 7.0],
-        "Ciências": [10.0, 8.0, 8.5, 7.0]
-      },
-      "Anna leticia": {
-        "Matemática": [7.0, 5.5, 6.5, 9.0],
-        "Português": [9.0, 4.5, 8.0, 7.5],
-        "História": [8.0, 7.5, 8.0, 7.0],
-        "Ciências": [10.0, 9.0, 8.5, 7.0]
-      },
-      "Lucas Silveira": {
-        "Matemática": [7.0, 7.5, 6.5, 9.0],
-        "Português": [9.0, 9.5, 8.0, 7.5],
-        "História": [8.0, 6.5, 9.0, 7.0],
-        "Ciências": [10.0, 8.0, 8.5, 7.0]
-      }
     }
   }
 };
@@ -109,13 +145,14 @@ function atualizarGrafico(labels, dados) {
     data: {
       labels: labels,
       datasets: [{
-        label: 'Atividades Concluídas',
+        label: 'Atividades abaixo:',
         data: dados,
         backgroundColor: ['#36a2eb', '#4bc0c0', '#ffcd56', '#7ad17a']
       }]
     },
     options: {
       responsive: true,
+      maintainAspectRatio: false,
       scales: {
         y: {
           beginAtZero: true

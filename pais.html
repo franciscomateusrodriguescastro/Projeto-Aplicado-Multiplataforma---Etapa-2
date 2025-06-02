@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  
   <nav class="navbar navbar-expand-lg shadow-sm bg-light fixed-top navbar-gradient">
     <div class="container">
       <a class="navbar-brand fw-bold text-primary" href="index.html">
@@ -35,10 +35,10 @@
     </div>
   </nav>
 
-  <!-- SOBRE -->
+
   <section id="sobre" class="py-5" style="background: linear-gradient(135deg, #00B5E2, #FAE053);">
     <div class="container text-center text-white">
-      <h2 class="display-4 mb-3"><i class="bi bi-book me-2"></i>Relatórios para Pais</h2>
+      <h2 id="titulo1"><i class="bi bi-book me-2"></i>Relatórios para Pais</h2>
       <p class="lead fw-light">Acompanhe as atividades escolares, observações dos professores e avisos importantes do seu filho em tempo real.</p>
     </div>
   </section>
@@ -53,13 +53,14 @@
     <div id="infoTurma"></div>
   </section>
 
-  <!-- RELATÓRIO -->
   <section id="relatorio">
-    <h2>Atividades Realizadas</h2>
-    <canvas id="graficoAtividades"></canvas>
+    <h2>Atividades realizadas semanalmente por turmas</h2>
+    <div class="grafico-container">
+      <canvas id="graficoAtividades"></canvas>
+    </div>
   </section>
 
-  <!-- OBSERVAÇÕES -->
+  <!-- OBSERVAÇÕES DOS PROFESSORES -->
   <section id="observacoes">
     <h2>Observações dos Professores</h2>
     <div class="mensagem"><strong>Prof. Ana (01/05/2025):</strong><p>Foi liberado o forms para inscrição de presidente do grêmio</p></div>
@@ -69,6 +70,15 @@
     <div class="mensagem"><strong>Diretor George(14/05/2025):</strong><p>Encerrado as inscrições dos alunos para presidente do grêmio.</p></div>
     <div class="mensagem"><strong>Prof. Carlos(14/05/2025):</strong><p>Iniciaremos a semana das provas parciais na próxima semana!</p></div>
   </section>
+
+  <footer class="text-white text-center py-3" style="background: linear-gradient(135deg, #00B5E2, #FAE053);">
+    <div class="d-flex justify-content-center mb-3">
+      <a href="" class="text-decoration-none mx-2"><i class="bi bi-facebook text-white" style="font-size: 30px;"></i></a>
+      <a href="" class="text-decoration-none mx-2"><i class="bi bi-instagram text-white" style="font-size: 30px;"></i></a>
+      <a href="" class="text-decoration-none mx-2"><i class="bi bi-linkedin text-white" style="font-size: 30px;"></i></a>
+    </div>
+    <small class="me-2">&copy; 2025 EduPlataforma. Todos os direitos reservados.</small>
+  </footer>
 
   <script src="pais.js"></script>
 </body>
