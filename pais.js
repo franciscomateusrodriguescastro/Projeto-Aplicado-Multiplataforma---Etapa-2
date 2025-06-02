@@ -101,7 +101,9 @@ const turmas = {
       },
     }
   }
+  
 };
+
 
 let graficoAtual = null;
 
