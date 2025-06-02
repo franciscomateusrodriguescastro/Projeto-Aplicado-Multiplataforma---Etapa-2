@@ -1,60 +1,52 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background: linear-gradient(to right, #48c6ef, #6fda44);
-    color: white;
-    padding: 1.5rem;
-    text-align: center;
-  }
-  
-  h2 {
-    color: #0088cc;
-    margin-bottom: 0.5rem;
-  }
-  
-  section {
-    margin: 2rem;
-    padding: 1.5rem;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  }
-  
-  .turma-lista {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-  }
-  
-  .turma-lista button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .turma-lista button:hover {
-    background-color: #0056b3;
-  }
-  
-  .mensagem {
-    background-color: #f1f9ff;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-left: 4px solid #007bff;
-    border-radius: 8px;
-  }
-  
-  canvas {
-    max-width: 100%;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 2rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+h2 {
+  color: #0088cc;
+  margin-bottom: 0.5rem;
+}
+
+.turma-lista {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.turma-lista button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.turma-lista button:hover {
+  background-color: #0056b3;
+}
+
+.mensagem {
+  background-color: #f1f9ff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #007bff;
+  border-radius: 8px;
+}
+
+canvas {
+  max-width: 100%;
+}
