@@ -4,180 +4,657 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Painel do Professor - PlataformaEduca</title>
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" />
   <link rel="stylesheet" href="professor.css" />
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">
         <i class="bi bi-book-fill me-2"></i>PlataformaEduca
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarContent"
-        aria-controls="navbarContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex align-items-center gap-3">
-
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link active" href="index.html"><i class="bi bi-house-door me-1"></i> Início</a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-calendar-event me-1"></i> Agenda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-chat-left-text me-1"></i> Mensagens</a>
+          </li>
         </ul>
-        <a class="nav-link ms-auto" href="/Projeto-Aplicado-Multiplataforma---Etapa-2/login.html">
-          <i class="bi bi-person-circle fs-3"></i>
-        </a>
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            <i class="bi bi-person-circle fs-4 me-1"></i> Prof. Silva
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i> Perfil</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i> Configurações</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-box-arrow-right me-2"></i> Sair</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
 
-  <header>
-    <h1><i class="bi bi-mortarboard"></i> Painel do Professor</h1>
+  <header class="bg-light py-5 mt-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <h1 class="display-5 fw-bold"><i class="bi bi-mortarboard text-primary"></i> Painel do Professor</h1>
+          <p class="lead">Bem-vindo de volta, Professor Silva!</p>
+        </div>
+        <div class="d-flex gap-2">
+          <button class="btn btn-primary"><i class="bi bi-plus-lg me-1"></i> Aula Rápida</button>
+          <button class="btn btn-outline-secondary"><i class="bi bi-question-circle me-1"></i> Ajuda</button>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <main class="container">
-    <h2>Resumo Geral</h2>
-    <div class="grid">
-      <div class="card">
-        <i class="bi bi-people"></i>
-        <h3>5 Turmas</h3>
+  <main class="container my-4">
+    <section class="mb-5">
+      <h2 class="mb-4 border-bottom pb-2">Resumo Geral</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-primary">
+            <div class="card-body text-center">
+              <i class="bi bi-people-fill display-4 text-primary mb-3"></i>
+              <h3 class="card-title">5 Turmas</h3>
+              <p class="card-text text-muted">2 turmas com atividades pendentes</p>
+              <a href="#" class="btn btn-sm btn-outline-primary">Ver todas</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-success">
+            <div class="card-body text-center">
+              <i class="bi bi-person-check display-4 text-success mb-3"></i>
+              <h3 class="card-title">120 Alunos</h3>
+              <p class="card-text text-muted">15 alunos com atividades atrasadas</p>
+              <a href="#" class="btn btn-sm btn-outline-success">Ver alunos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-info">
+            <div class="card-body text-center">
+              <i class="bi bi-file-earmark-text display-4 text-info mb-3"></i>
+              <h3 class="card-title">18 Atividades</h3>
+              <p class="card-text text-muted">32 respostas para corrigir</p>
+              <a href="#" class="btn btn-sm btn-outline-info">Corrigir agora</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <i class="bi bi-person-check"></i>
-        <h3>120 Alunos</h3>
+    </section>
+
+    <div class="row">
+      <div class="col-lg-8">
+        <section class="mb-5">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="mb-0">Minhas Turmas</h2>
+            <button type="button" class="btn btn-primary" id="btnNovaTurma">
+              <i class="bi bi-plus-lg me-1"></i> Nova Turma
+            </button>
+          </div>
+          
+          <div class="table-responsive">
+            <table class="table table-hover align-middle">
+              <thead class="table-light">
+                <tr>
+                  <th>Turma</th>
+                  <th>Alunos</th>
+                  <th>Atividades</th>
+                  <th>Status</th>
+                  <th>Ações</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <i class="bi bi-people-fill text-primary me-2"></i>
+                    <strong>Turma A - Matemática</strong>
+                  </td>
+                  <td>30 alunos</td>
+                  <td>5 atividades</td>
+                  <td><span class="badge bg-success">Ativa</span></td>
+                  <td>
+                    <button class="btn btn-sm btn-outline-primary me-1" title="Ver detalhes">
+                      <i class="bi bi-eye"></i>
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary me-1" title="Editar">
+                      <i class="bi bi-pencil"></i>
+                    </button>
+                    <button class="btn btn-sm btn-outline-danger" title="Remover">
+                      <i class="bi bi-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="bi bi-people-fill text-primary me-2"></i>
+                    <strong>Turma B - Ciências</strong>
+                  </td>
+                  <td>25 alunos</td>
+                  <td>3 atividades</td>
+                  <td><span class="badge bg-warning text-dark">Pendente</span></td>
+                  <td>
+                    <button class="btn btn-sm btn-outline-primary me-1" title="Ver detalhes">
+                      <i class="bi bi-eye"></i>
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary me-1" title="Editar">
+                      <i class="bi bi-pencil"></i>
+                    </button>
+                    <button class="btn btn-sm btn-outline-danger" title="Remover">
+                      <i class="bi bi-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="mb-5">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="mb-0">Conteúdos Didáticos</h2>
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary" id="btnNovoConteudo">
+                <i class="bi bi-plus-lg me-1"></i> Novo
+              </button>
+              <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+                <span class="visually-hidden">Opções</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#"><i class="bi bi-upload me-2"></i> Importar</a></li>
+                <li><a class="dropdown-item" href="#"><i class="bi bi-folder me-2"></i> Organizar</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title">Aula 1 - Matemática</h5>
+                    <div class="dropdown">
+                      <button class="btn btn-sm btn-link text-muted" data-bs-toggle="dropdown">
+                        <i class="bi bi-three-dots-vertical"></i>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-pencil me-2"></i> Editar</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-share me-2"></i> Compartilhar</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-trash me-2"></i> Excluir</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="card-text text-muted small">Introdução à Álgebra Linear</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="badge bg-light text-dark"><i class="bi bi-people me-1"></i> 3 turmas</span>
+                    <span class="text-muted small">Atualizado: 15/06/2023</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title">Aula 2 - Ciências</h5>
+                    <div class="dropdown">
+                      <button class="btn btn-sm btn-link text-muted" data-bs-toggle="dropdown">
+                        <i class="bi bi-three-dots-vertical"></i>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-pencil me-2"></i> Editar</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-share me-2"></i> Compartilhar</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-trash me-2"></i> Excluir</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="card-text text-muted small">Ecologia e Sustentabilidade</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="badge bg-light text-dark"><i class="bi bi-people me-1"></i> 2 turmas</span>
+                    <span class="text-muted small">Atualizado: 10/06/2023</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <div class="card">
-        <i class="bi bi-file-earmark-text"></i>
-        <h3>18 Atividades</h3>
+
+      <div class="col-lg-4">
+        <section class="mb-5">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="h4 mb-0">Atividades Recentes</h2>
+            <a href="#" class="btn btn-sm btn-link">Ver todas</a>
+          </div>
+          
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex mb-3">
+                <div class="flex-shrink-0">
+                  <i class="bi bi-check-circle-fill text-success fs-4"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h6 class="mb-0">Atividade corrigida</h6>
+                  <p class="small text-muted mb-0">Você corrigiu 5 exercícios de Matemática</p>
+                  <span class="small text-muted">Hoje, 10:45</span>
+                </div>
+              </div>
+              
+              <div class="d-flex mb-3">
+                <div class="flex-shrink-0">
+                  <i class="bi bi-exclamation-triangle-fill text-warning fs-4"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h6 class="mb-0">Atividades atrasadas</h6>
+                  <p class="small text-muted mb-0">3 alunos não entregaram a tarefa de Ciências</p>
+                  <span class="small text-muted">Ontem, 16:30</span>
+                </div>
+              </div>
+              
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <i class="bi bi-chat-left-text-fill text-info fs-4"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h6 class="mb-0">Novo comentário</h6>
+                  <p class="small text-muted mb-0">João Silva comentou na atividade de Geografia</p>
+                  <span class="small text-muted">Ontem, 14:15</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-5">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="h4 mb-0">Próximas Aulas</h2>
+            <a href="#" class="btn btn-sm btn-link">Ver calendário</a>
+          </div>
+          
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex mb-3 border-bottom pb-3">
+                <div class="flex-shrink-0 bg-primary bg-opacity-10 p-2 rounded">
+                  <i class="bi bi-book text-primary"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h6 class="mb-0">Matemática - Turma A</h6>
+                  <p class="small text-muted mb-0">Álgebra Linear - Aula 3</p>
+                  <span class="small text-muted"><i class="bi bi-clock me-1"></i> Amanhã, 08:00</span>
+                </div>
+              </div>
+              
+              <div class="d-flex mb-3 border-bottom pb-3">
+                <div class="flex-shrink-0 bg-success bg-opacity-10 p-2 rounded">
+                  <i class="bi bi-flask text-success"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h6 class="mb-0">Ciências - Turma B</h6>
+                  <p class="small text-muted mb-0">Experimento: Fotossíntese</p>
+                  <span class="small text-muted"><i class="bi bi-clock me-1"></i> Amanhã, 10:30</span>
+                </div>
+              </div>
+              
+              <div class="d-flex">
+                <div class="flex-shrink-0 bg-info bg-opacity-10 p-2 rounded">
+                  <i class="bi bi-globe-americas text-info"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h6 class="mb-0">Geografia - Turma C</h6>
+                  <p class="small text-muted mb-0">Geografia Física do Brasil</p>
+                  <span class="small text-muted"><i class="bi bi-clock me-1"></i> Sexta, 14:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
 
-    <h2>
-      Turmas
-      <button type="button" id="btnNovaTurma">
-        <i class="bi bi-plus-lg"></i> Nova Turma
-      </button>
-    </h2>
-    <ul class="turmas-lista">
-      <li>
-        Turma A - 30 alunos
-        <span><i class="bi bi-box-arrow-in-right" title="Ver detalhes"></i></span>
-        <span><i class="bi bi-trash btn-danger btn-remover" title="Remover turma"></i></span>
-      </li>
-      <li>
-        Turma B - 25 alunos
-        <span><i class="bi bi-box-arrow-in-right" title="Ver detalhes"></i></span>
-        <span><i class="bi bi-trash btn-danger btn-remover" title="Remover turma"></i></span>
-      </li>
-    </ul>
+    <section class="mb-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-0">Atividades / Quizzes</h2>
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary" id="btnNovoQuiz">
+            <i class="bi bi-plus-lg me-1"></i> Novo Quiz
+          </button>
+          <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+            <span class="visually-hidden">Opções</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-collection me-2"></i> Banco de Questões</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-upload me-2"></i> Importar</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead class="table-light">
+            <tr>
+              <th>Título</th>
+              <th>Turma</th>
+              <th>Data</th>
+              <th>Status</th>
+              <th>Respostas</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <i class="bi bi-question-square-fill text-primary me-2"></i>
+                <strong>Quiz 1 - Português</strong>
+              </td>
+              <td>Turma A</td>
+              <td>15/06/2023</td>
+              <td><span class="badge bg-success">Ativo</span></td>
+              <td>28/30</td>
+              <td>
+                <button class="btn btn-sm btn-outline-primary me-1" title="Resultados">
+                  <i class="bi bi-graph-up"></i>
+                </button>
+                <button class="btn btn-sm btn-outline-secondary me-1" title="Editar">
+                  <i class="bi bi-pencil"></i>
+                </button>
+                <button class="btn btn-sm btn-outline-danger" title="Remover">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="bi bi-file-earmark-text-fill text-success me-2"></i>
+                <strong>Exercício - Geografia</strong>
+              </td>
+              <td>Turma B</td>
+              <td>12/06/2023</td>
+              <td><span class="badge bg-warning text-dark">Correção</span></td>
+              <td>22/25</td>
+              <td>
+                <button class="btn btn-sm btn-outline-primary me-1" title="Resultados">
+                  <i class="bi bi-graph-up"></i>
+                </button>
+                <button class="btn btn-sm btn-outline-secondary me-1" title="Editar">
+                  <i class="bi bi-pencil"></i>
+                </button>
+                <button class="btn btn-sm btn-outline-danger" title="Remover">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="bi bi-code-square-fill text-info me-2"></i>
+                <strong>Programação</strong>
+              </td>
+              <td>Turma C</td>
+              <td>10/06/2023</td>
+              <td><span class="badge bg-secondary">Finalizado</span></td>
+              <td>20/20</td>
+              <td>
+                <button class="btn btn-sm btn-outline-primary me-1" title="Resultados">
+                  <i class="bi bi-graph-up"></i>
+                </button>
+                <button class="btn btn-sm btn-outline-secondary me-1" title="Editar">
+                  <i class="bi bi-pencil"></i>
+                </button>
+                <button class="btn btn-sm btn-outline-danger" title="Remover">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-    <h2>
-      Conteúdos
-      <button type="button" id="btnNovoConteudo">
-        <i class="bi bi-plus-lg"></i> Novo
-      </button>
-    </h2>
-    <ul class="conteudos-lista">
-      <li>
-        Aula 1 - Matemática
-        <span>
-          <i class="bi bi-pencil btn-editar" title="Editar conteúdo"></i>
-          <i class="bi bi-trash btn-danger btn-remover" title="Remover conteúdo"></i>
-        </span>
-      </li>
-      <li>
-        Aula 2 - Ciências
-        <span>
-          <i class="bi bi-pencil btn-editar" title="Editar conteúdo"></i>
-          <i class="bi bi-trash btn-danger btn-remover" title="Remover conteúdo"></i>
-        </span>
-      </li>
-    </ul>
-
-    <h2>
-      Atividades / Quizzes
-      <button type="button" id="btnNovoQuiz">
-        <i class="bi bi-plus-lg"></i> Novo
-      </button>
-    </h2>
-    <ul class="quizzes-lista">
-      <li>
-        Quiz 1 - Português
-        <span>
-          <i class="bi bi-graph-up" title="Resultados"></i>
-          <i class="bi bi-trash btn-danger btn-remover" title="Remover quiz"></i>
-        </span>
-      </li>
-      <li>
-        Exercício - Geografia
-        <span>
-          <i class="bi bi-graph-up" title="Resultados"></i>
-          <i class="bi bi-trash btn-danger btn-remover" title="Remover quiz"></i>
-        </span>
-      </li>
-      <li>
-        Programação
-        <span>
-          <i class="bi bi-graph-up" title="Resultados"></i>
-          <i class="bi bi-trash btn-danger btn-remover" title="Remover quiz"></i>
-        </span>
-      </li>
-    </ul>
-
-    <h2>Notificações</h2>
-    <div class="card">3 novas respostas corrigidas</div>
-    <div class="card">Turma B enviou novas atividades</div>
-
-    <h2>Gráfico de Atividades por Turma</h2>
-    <canvas id="graficoAtividades" style="max-width: 600px; margin: 0 auto;"></canvas>
+    <section class="mb-5">
+      <h2 class="mb-4 border-bottom pb-2">Estatísticas</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Atividades por Turma</h5>
+              <canvas id="graficoAtividades" height="250"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Média de Notas</h5>
+              <canvas id="graficoNotas" height="250"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <div class="modal" id="modalTurma" role="dialog" aria-modal="true" aria-labelledby="modalTitulo" tabindex="-1">
-    <div class="modal-content">
-      <span class="fechar" id="fecharModalTurma" role="button" aria-label="Fechar modal">&times;</span>
-      <h3 id="modalTitulo">Criar Nova Turma</h3>
-      <input type="text" placeholder="Nome da turma" id="novaTurmaNome" aria-describedby="helpNomeTurma" />
-      <button id="criarTurmaBtn">Criar</button>
+  <footer class="bg-light py-4 mt-5 border-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5><i class="bi bi-book-fill text-primary me-2"></i> PlataformaEduca</h5>
+          <p class="text-muted small">Sua plataforma de ensino online completa para professores e alunos.</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Links</h5>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-decoration-none text-muted">Ajuda</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Termos</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Privacidade</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Contato</h5>
+          <ul class="list-unstyled small">
+            <li><i class="bi bi-envelope me-2"></i> contato@plataformaeduca.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-3 text-muted small">
+        © 2025 PlataformaEduca. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modais -->
+  <div class="modal fade" id="modalTurma" tabindex="-1" aria-labelledby="modalTitulo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitulo">Criar Nova Turma</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="novaTurmaNome" class="form-label">Nome da Turma</label>
+              <input type="text" class="form-control" id="novaTurmaNome" placeholder="Ex: Turma A - Matemática 2023">
+            </div>
+            <div class="mb-3">
+              <label for="novaTurmaDisciplina" class="form-label">Disciplina</label>
+              <input type="text" class="form-control" id="novaTurmaDisciplina" placeholder="Ex: Matemática">
+            </div>
+            <div class="mb-3">
+              <label for="novaTurmaPeriodo" class="form-label">Período</label>
+              <select class="form-select" id="novaTurmaPeriodo">
+                <option selected>Selecione...</option>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" id="criarTurmaBtn">Criar Turma</button>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="modal" id="modalConteudo" role="dialog" aria-modal="true" aria-labelledby="modalTituloConteudo" tabindex="-1">
-    <div class="modal-content">
-      <span class="fechar" id="fecharModalConteudo" role="button" aria-label="Fechar modal">&times;</span>
-      <h3 id="modalTituloConteudo">Adicionar Novo Conteúdo</h3>
-      <input type="text" placeholder="Título do conteúdo" id="novoConteudoTitulo" />
-      <button id="criarConteudoBtn">Adicionar</button>
+  <div class="modal fade" id="modalConteudo" tabindex="-1" aria-labelledby="modalTituloConteudo" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTituloConteudo">Adicionar Novo Conteúdo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="novoConteudoTitulo" class="form-label">Título do Conteúdo</label>
+              <input type="text" class="form-control" id="novoConteudoTitulo" placeholder="Ex: Aula 1 - Introdução à Álgebra">
+            </div>
+            <div class="mb-3">
+              <label for="novoConteudoDescricao" class="form-label">Descrição</label>
+              <textarea class="form-control" id="novoConteudoDescricao" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="novoConteudoTurmas" class="form-label">Turmas</label>
+              <select class="form-select" multiple id="novoConteudoTurmas">
+                <option selected>Turma A - Matemática</option>
+                <option>Turma B - Ciências</option>
+                <option>Turma C - Geografia</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="novoConteudoAnexo" class="form-label">Anexar Arquivos</label>
+              <input class="form-control" type="file" id="novoConteudoAnexo" multiple>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" id="criarConteudoBtn">Salvar Conteúdo</button>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="modal" id="modalEditarConteudo" role="dialog" aria-modal="true" aria-labelledby="modalTituloEditarConteudo" tabindex="-1">
-    <div class="modal-content">
-      <span class="fechar" id="fecharModalEditarConteudo" role="button" aria-label="Fechar modal">&times;</span>
-      <h3 id="modalTituloEditarConteudo">Editar Conteúdo</h3>
-      <input type="text" id="editarConteudoTitulo" />
-      <button id="salvarConteudoBtn">Salvar</button>
-    </div>
-  </div>
-
-  <div class="modal" id="modalQuiz" role="dialog" aria-modal="true" aria-labelledby="modalTituloQuiz" tabindex="-1">
-    <div class="modal-content">
-      <span class="fechar" id="fecharModalQuiz" role="button" aria-label="Fechar modal">&times;</span>
-      <h3 id="modalTituloQuiz">Adicionar Novo Quiz</h3>
-      <input type="text" placeholder="Título do quiz" id="novoQuizTitulo" />
-      <button id="criarQuizBtn">Adicionar</button>
+  <div class="modal fade" id="modalQuiz" tabindex="-1" aria-labelledby="modalTituloQuiz" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTituloQuiz">Criar Novo Quiz</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="nav nav-tabs mb-4" id="quizTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="detalhes-tab" data-bs-toggle="tab" data-bs-target="#detalhes" type="button">Detalhes</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="questoes-tab" data-bs-toggle="tab" data-bs-target="#questoes" type="button">Questões</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="configuracoes-tab" data-bs-toggle="tab" data-bs-target="#configuracoes" type="button">Configurações</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="quizTabsContent">
+            <div class="tab-pane fade show active" id="detalhes" role="tabpanel">
+              <div class="mb-3">
+                <label for="novoQuizTitulo" class="form-label">Título do Quiz</label>
+                <input type="text" class="form-control" id="novoQuizTitulo" placeholder="Ex: Quiz 1 - Português">
+              </div>
+              <div class="mb-3">
+                <label for="novoQuizDescricao" class="form-label">Descrição</label>
+                <textarea class="form-control" id="novoQuizDescricao" rows="3"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="novoQuizTurmas" class="form-label">Turmas</label>
+                <select class="form-select" multiple id="novoQuizTurmas">
+                  <option selected>Turma A - Matemática</option>
+                  <option>Turma B - Ciências</option>
+                  <option>Turma C - Geografia</option>
+                </select>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="questoes" role="tabpanel">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="mb-0">Questões</h6>
+                <button class="btn btn-sm btn-primary"><i class="bi bi-plus-lg me-1"></i> Adicionar Questão</button>
+              </div>
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="card-title">Questão 1</h6>
+                    <div>
+                      <button class="btn btn-sm btn-outline-danger me-1"><i class="bi bi-trash"></i></button>
+                      <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-pencil"></i></button>
+                    </div>
+                  </div>
+                  <p class="card-text">Qual é a capital do Brasil?</p>
+                  <div class="ms-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="questao1" id="questao1a">
+                      <label class="form-check-label" for="questao1a">Rio de Janeiro</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="questao1" id="questao1b" checked>
+                      <label class="form-check-label" for="questao1b">Brasília</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="questao1" id="questao1c">
+                      <label class="form-check-label" for="questao1c">São Paulo</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-sm btn-outline-primary"><i class="bi bi-plus-lg me-1"></i> Adicionar Questão</button>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="configuracoes" role="tabpanel">
+              <div class="mb-3">
+                <label for="quizDataInicio" class="form-label">Data de Início</label>
+                <input type="datetime-local" class="form-control" id="quizDataInicio">
+              </div>
+              <div class="mb-3">
+                <label for="quizDataFim" class="form-label">Data de Término</label>
+                <input type="datetime-local" class="form-control" id="quizDataFim">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="quizTempoLimite">
+                <label class="form-check-label" for="quizTempoLimite">Tempo limite</label>
+              </div>
+              <div class="mb-3">
+                <label for="quizTentativas" class="form-label">Número de Tentativas</label>
+                <select class="form-select" id="quizTentativas">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3" selected>3</option>
+                  <option value="0">Ilimitadas</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" id="criarQuizBtn">Salvar Quiz</button>
+        </div>
+      </div>
     </div>
   </div>
 
