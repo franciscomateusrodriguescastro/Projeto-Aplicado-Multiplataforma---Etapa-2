@@ -11,46 +11,40 @@
 </head>
 
 <body>
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg shadow-sm bg-light fixed-top navbar-gradient">
-  <div class="container">
-    <!-- Logo à esquerda -->
-    <a class="navbar-brand fw-bold text-primary" href="index.html">
-      <i class="bi bi-book-fill me-2"></i>PlataformaEduca
-    </a>
-
-    <!-- Botão de colapso (hamburger) -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Conteúdo do menu -->
-    <div class="collapse navbar-collapse" id="navbarContent">
-      <!-- Menu centralizado -->
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex align-items-center gap-3">
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="#sobre">Sobre</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="#recursos">Funcionalidades</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="#contato">Contato</a>
-        </li>
-      </ul>
-
-      <!-- Ícone de contato alinhado à direita -->
-      <a class="nav-link ms-auto" href="/login.html">
-        <i class="bi bi-person-circle fs-3 text-primary"></i>
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="index.html">
+        <i class="bi bi-book-fill me-2"></i>PlataformaEduca
       </a>
-    </div>
-  </div>
-</nav>
 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex align-items-center gap-3">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#recursos">Funcionalidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#contato">Contato</a>
+          </li>
+        </ul>
+
+        <a class="nav-link ms-auto" href="login.html">
+          <i class="bi bi-person-circle fs-3 text-primary"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
 
   <!-- Hero Section -->
-  <section class="hero d-flex align-items-center justify-content-center text-white" style="height: 80vh; background-image: url('img/hero-bg.jpg'); background-size: cover; background-position: center;">
+  <section class="hero d-flex align-items-center justify-content-center text-white"
+    style="height: 80vh; background-image: url('img/hero-bg.jpg'); background-size: cover; background-position: center;">
     <div class="container text-center">
       <h1 class="display-4 fw-bold">Educação Interativa e Acessível</h1>
       <p class="lead">Plataforma para alunos, professores e responsáveis</p>
@@ -102,48 +96,43 @@
 
   <!-- Recursos -->
   <section id="recursos" class="bg-light py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">
-      <i class="bi bi-gear-fill text-primary me-2"></i>Funcionalidades
-    </h2>
-    <div class="row">
-      <!-- Card 1: Conteúdo Didático -->
-      <div class="col-md-4 mb-4">
-        <a href="conteudo.html" class="card h-100 shadow-sm text-decoration-none text-dark d-block">
-          <div class="card-body text-center">
-            <i class="bi bi-file-earmark-text display-4 text-primary mb-3"></i>
-            <h5 class="card-title">Conteúdo Didático</h5>
-            <p class="card-text">Acesso a aulas, vídeos, quizzes e muito mais.</p>
-          </div>
-        </a>
-      </div>
+    <div class="container">
+      <h2 class="text-center mb-4">
+        <i class="bi bi-gear-fill text-primary me-2"></i>Funcionalidades
+      </h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <a href="conteudo.html" class="card h-100 shadow-sm text-decoration-none text-dark d-block">
+            <div class="card-body text-center">
+              <i class="bi bi-file-earmark-text display-4 text-primary mb-3"></i>
+              <h5 class="card-title">Conteúdo Didático</h5>
+              <p class="card-text">Acesso a aulas, vídeos, quizzes e muito mais.</p>
+            </div>
+          </a>
+        </div>
 
-      <!-- Card 2: Painel do Professor -->
-      <div class="col-md-4 mb-4">
-        <a href="painel-professor.html" class="card h-100 shadow-sm text-decoration-none text-dark d-block">
-          <div class="card-body text-center">
-            <i class="bi bi-person-lines-fill display-4 text-primary mb-3"></i>
-            <h5 class="card-title">Painel do Professor</h5>
-            <p class="card-text">Ferramentas para criar e gerenciar conteúdos.</p>
-          </div>
-        </a>
-      </div>
+        <div class="col-md-4 mb-4">
+          <a href="painel-professor.html" class="card h-100 shadow-sm text-decoration-none text-dark d-block">
+            <div class="card-body text-center">
+              <i class="bi bi-person-lines-fill display-4 text-primary mb-3"></i>
+              <h5 class="card-title">Painel do Professor</h5>
+              <p class="card-text">Ferramentas para criar e gerenciar conteúdos.</p>
+            </div>
+          </a>
+        </div>
 
-      <!-- Card 3: Relatórios para Pais -->
-      <div class="col-md-4 mb-4">
-        <a href="pais.html" class="card h-100 shadow-sm text-decoration-none text-dark d-block">
-          <div class="card-body text-center">
-            <i class="bi bi-bar-chart-line display-4 text-primary mb-3"></i>
-            <h5 class="card-title">Relatórios para Pais</h5>
-            <p class="card-text">Visualização do progresso dos alunos em tempo real.</p>
-          </div>
-        </a>
+        <div class="col-md-4 mb-4">
+          <a href="pais.html" class="card h-100 shadow-sm text-decoration-none text-dark d-block">
+            <div class="card-body text-center">
+              <i class="bi bi-bar-chart-line display-4 text-primary mb-3"></i>
+              <h5 class="card-title">Relatórios para Pais</h5>
+              <p class="card-text">Visualização do progresso dos alunos em tempo real.</p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
-
+  </section>
 
   <!-- Contato -->
   <section id="contato" class="py-5">
@@ -186,36 +175,64 @@
         <i class="bi bi-instagram text-white" style="font-size: 30px;"></i>
       </a>
       <a href="" target="_blank" class="text-decoration-none mx-2">
-        <i class="bi bi-linkedin text-white" style="font-size: 30px;"></i>
+        <i class="bi bi-twitter text-white" style="font-size: 30px;"></i>
       </a>
     </div>
-
-    <small class="me-2">&copy; 2025 EduPlataforma. Todos os direitos reservados.</small>
+    <div>
+      <p class="mb-0">PlataformaEduca &copy; 2023. Todos os direitos reservados.</p>
+    </div>
   </footer>
-  <script>
-  document.querySelector("form").addEventListener("submit", async function (e) {
-    e.preventDefault();
 
-    const nome = document.getElementById("nome").value;
-    const email = document.getElementById("email").value;
-    const mensagem = document.getElementById("mensagem").value;
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    const resposta = await fetch("http://localhost:3000/comentarios", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ nome, email, mensagem }),
-    });
+  <!-- API Info User -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const userId = localStorage.getItem('user_id');
 
-    if (resposta.ok) {
-      alert("Comentário enviado com sucesso!");
-      this.reset();
-    } else {
-      alert("Erro ao enviar o comentário.");
+    if (userId) {
+      fetchUserDetails(userId);
+    }
+
+    async function fetchUserDetails(userId) {
+      const url = `http://24.144.82.226:8031/contas/api/users/${userId}/`;
+
+      try {
+        const response = await fetch(url, {
+          method: 'GET',
+          headers: { 'Content-Type': 'application/json' }
+        });
+
+        if (!response.ok) throw new Error('Erro ao buscar dados do usuário');
+
+        const userData = await response.json();
+
+        const userIconLink = document.querySelector('.nav-link.ms-auto');
+        if (!userIconLink) return;
+
+        const userNameElement = document.createElement('span');
+        userNameElement.textContent = `Olá, ${userData.nome || userData.username || 'Usuário'}`;
+        userNameElement.classList.add('text-primary', 'fw-bold', 'ms-3');
+
+        userIconLink.innerHTML = '';
+        userIconLink.appendChild(userNameElement);
+
+        const logoutBtn = document.createElement('button');
+        logoutBtn.textContent = 'Sair';
+        logoutBtn.className = 'btn btn-outline-danger ms-3';
+        logoutBtn.addEventListener('click', () => {
+          localStorage.removeItem('user_id');
+          location.reload();
+        });
+
+        userIconLink.appendChild(logoutBtn);
+      } catch (error) {
+        console.error('Erro ao carregar dados do usuário:', error);
+        localStorage.removeItem('user_id');
+      }
     }
   });
 </script>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
