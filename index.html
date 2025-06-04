@@ -195,7 +195,7 @@
     }
 
     async function fetchUserDetails(userId) {
-      const url = `http://24.144.82.226:8031/contas/api/users/${userId}/`;
+      const url = `/api/contas/api/users/${userId}/`;
 
       try {
         const response = await fetch(url, {
